@@ -18,12 +18,14 @@ class Counter extends Component {
   }
 
   render() {
+    const text = "당신은 어썸한가요?";
     return (
       <div>
         <h1>카운터</h1>
         <div>값: {this.state.number}</div>
         <button onClick={this.handleIncrease}>+</button>
         <button onClick={this.handleDecrease}>-</button>
+        {text};
       </div>
     );
   }
